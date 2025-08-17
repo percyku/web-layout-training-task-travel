@@ -1,4 +1,140 @@
-<h1 class="header">header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
+<nav class="navbar bg-white py-4 py-lg-5 fixed-top">
+  <div class="container position-relative">
+    <div class="d-flex align-items-center me-auto">
+      <a class="navbar-brand p-0 me-7" href="index"
+        ><img src="../assets/images/logo.png" class="logo-size" alt="logo"
+      /></a>
+
+      <form class="position-relative d-none d-lg-block">
+        <span
+          class="material-icons-outlined align-bottom position-relative position-absolute top-50 start-0 translate-middle-y ps-4 text-neutral-60"
+        >
+          search
+        </span>
+        <input
+          type="search"
+          class="form-control rounded-1 py-2 ps-10 navbar-lg-search"
+          id="navbar-lg-search"
+          placeholder="搜尋景點、地點或城市"
+        />
+      </form>
+    </div>
+
+    <div class="position-absolute z-1 start-0 end-0 px-4 bg-white">
+      <div class="collapse" id="collapseExample">
+        <div class="d-flex align-items-center">
+          <form class="position-relative w-100">
+            <span
+              class="material-icons-outlined align-bottom position-relative position-absolute top-50 start-0 translate-middle-y ps-4 text-neutral-60"
+            >
+              search
+            </span>
+            <input
+              type="search"
+              class="form-control rounded-1 py-2 ps-10"
+              id="exampleFormControlInput1"
+              placeholder="搜尋景點、地點或城市"
+            />
+          </form>
+          <button
+            type="button"
+            class="btn p-2 border-0"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseExample"
+          >
+            <span class="material-icons-outlined"> close </span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <button
+      type="button"
+      class="btn p-2 border-0 d-lg-none"
+      data-bs-toggle="collapse"
+      data-bs-target="#collapseExample"
+    >
+      <span class="material-icons-outlined align-bottom"> search </span>
+    </button>
+
+    <button type="button" class="btn py-2 border-0">
+      <span class="position-relative">
+        <span
+          class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-alert cart-tag p-0"
+        >
+          2
+          <span class="visually-hidden">unread messages</span>
+        </span>
+        <span class="material-icons-outlined align-bottom">
+          shopping_cart
+        </span>
+      </span>
+    </button>
+
+    <button
+      class="btn border-0 p-2 d-lg-none"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar"
+    >
+      <span class="material-icons-outlined align-bottom"> menu </span>
+    </button>
+
+    <button
+      class="btn btn-primary rounded-3 py-5 px-9 border-0 d-none d-lg-block ms-5"
+      type="button"
+    >
+      <a href="login">登入</a>
+      <span>/</span>
+      <a href="register">註冊</a>
+    </button>
+
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
+    >
+      <div class="offcanvas-header">
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <div class="offcanvas-body px-7">
+        <div class="d-flex align-items-center pb-16 border-bottom mb-7">
+          <img
+            src="/assets/images/icons/visitor.png"
+            alt="visitor"
+            class="me-4 head-size"
+          />
+          <p class="fs-5">
+            <span class="text-primary fw-bold">訪客</span> <br /><span
+              class="text-primary-40"
+              >未登入</span
+            >
+          </p>
+        </div>
+        <h4 class="text-primary fw-bold mb-2">歡迎來到 ZOBAA</h4>
+
+        <p class="text-neutral-80 mb-auto">
+          加入會員即可立即訂購、收藏行程，並享相關優惠好禮。
+        </p>
+      </div>
+      <div class="container">
+        <button
+          class="btn btn-primary rounded-3 py-5 px-9 border-0 w-100"
+          type="button"
+        >
+          <a href="login">登入</a>
+          <span>/</span>
+          <a href="register">註冊</a>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
