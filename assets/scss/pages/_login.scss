@@ -1,0 +1,29 @@
+.left-side {
+  width: 640px;
+  height: 100vh;
+}
+
+.right-side {
+  padding-top: 151px;
+  padding-bottom: 151px;
+  height: 100vh;
+  padding-top: 60px;
+  padding-bottom: 90px;
+}
+
+@media (min-width: 992px) {
+  .right-side {
+    padding-top: 151px;
+    padding-bottom: 151px;
+  }
+}
+
+.img-size {
+  width: 600px;
+  height: 1000px;
+}
+
+.login-img-size {
+  width: 30px;
+  height: 30px;
+}
