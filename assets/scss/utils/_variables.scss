@@ -1518,11 +1518,13 @@ $card-group-margin: $grid-gutter-width * 0.5 !default;
 // Accordion
 
 // scss-docs-start accordion-variables
-$accordion-padding-y: 1rem !default;
+// $accordion-padding-y: 1rem !default;
+$accordion-padding-y: 0.5rem !default; //custom
 $accordion-padding-x: 1.25rem !default;
 $accordion-color: var(--#{$prefix}body-color) !default;
 $accordion-bg: var(--#{$prefix}body-bg) !default;
-$accordion-border-width: var(--#{$prefix}border-width) !default;
+// $accordion-border-width: var(--#{$prefix}border-width) !default;
+$accordion-border-width: 0 !default; //custom
 $accordion-border-color: var(--#{$prefix}border-color) !default;
 $accordion-border-radius: var(--#{$prefix}border-radius) !default;
 $accordion-inner-border-radius: subtract(
@@ -1538,20 +1540,23 @@ $accordion-button-padding-x: $accordion-padding-x !default;
 $accordion-button-color: var(--#{$prefix}body-color) !default;
 $accordion-button-bg: var(--#{$prefix}accordion-bg) !default;
 $accordion-transition: $btn-transition, border-radius 0.15s ease !default;
-$accordion-button-active-bg: var(--#{$prefix}primary-bg-subtle) !default;
+// $accordion-button-active-bg: var(--#{$prefix}primary-bg-subtle) !default;
+$accordion-button-active-bg: none !default; //custom
 $accordion-button-active-color: var(--#{$prefix}primary-text-emphasis) !default;
 
 // fusv-disable
-$accordion-button-focus-border-color: $input-focus-border-color !default; // Deprecated in v5.3.3
-// fusv-enable
-$accordion-button-focus-box-shadow: $btn-focus-box-shadow !default;
-
+// $accordion-button-focus-border-color: $input-focus-border-color !default; // Deprecated in v5.3.3
+// // fusv-enable
+// $accordion-button-focus-box-shadow: $btn-focus-box-shadow !default;
+//custom
+$accordion-button-focus-border-color: white !default; // Deprecated in v5.3.3
+$accordion-button-focus-box-shadow: none !default;
+//custom
 $accordion-icon-width: 1.25rem !default;
 $accordion-icon-color: $body-color !default;
 $accordion-icon-active-color: $primary-text-emphasis !default;
 $accordion-icon-transition: transform 0.2s ease-in-out !default;
 $accordion-icon-transform: rotate(-180deg) !default;
-
 $accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='#{$accordion-icon-color}' stroke-linecap='round' stroke-linejoin='round'><path d='M2 5L8 11L14 5'/></svg>") !default;
 $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='#{$accordion-icon-active-color}' stroke-linecap='round' stroke-linejoin='round'><path d='M2 5L8 11L14 5'/></svg>") !default;
 // scss-docs-end accordion-variables
