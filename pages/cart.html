@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>購物車</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <main class="margin-top cart-bg">
+      <section class="cart-list">
+        <div class="container">
+          <div class="row py-10">
+            <div class="col col-lg-8">
+              <div class="card bg-white rounded-4 border-0 mb-7">
+                <div
+                  class="d-flex flex-nowrap justify-content-between align-items-center py-5 px-7"
+                >
+                  <div class="form-check check-all">
+                    <input
+                      class="form-check-input check-all-btn"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label
+                      class="form-check-label check-all-label"
+                      for="flexCheckDefault"
+                    >
+                      全選
+                    </label>
+                  </div>
+                  <button
+                    class="btn btn-outline-primary rounded-3 py-5 px-9 delete-btn"
+                    type="button"
+                  >
+                    刪除選中活動
+                  </button>
+                </div>
+              </div>
+
+              <div class="card bg-white rounded-4 border-0 mb-5 mb-lg-7">
+                <div
+                  class="d-flex flex-column flex-lg-row align-items-lg-center px-5 pt-7 pb-5 ps-lg-7 pe-lg-9 py-lg-9 border-bottom"
+                >
+                  <div class="form-check pe-lg-7 align-self-lg-start">
+                    <input
+                      class="form-check-input check-item mb-7"
+                      type="checkbox"
+                      value=""
+                    />
+                  </div>
+
+                  <div class="cart-img-size mb-6 me-lg-4">
+                    <img
+                      src="/assets/images/cart/cart-1.png"
+                      class="object-fit-cover rounded-4 d-block"
+                      alt="cart-1"
+                    />
+                  </div>
+                  <div class="me-lg-7">
+                    <h3 class="fs-4 fw-bold text-neutral-100 mb-2">
+                      海闊天空展望台門票 HARUKAS 300
+                    </h3>
+                    <p class="fs-5 text-neutral-80 mb-2">
+                      阿倍野展望台門票 HARUKAS 300｜附章魚燒兌換劵
+                    </p>
+                    <p class="fs-5 text-neutral-80 mb-7">兌換期內皆適用</p>
+                  </div>
+
+                  <div class="d-flex flex-nowrap align-items-center">
+                    <a href="#" class="p-5 rounded-circle border">
+                      <span class="material-icons-outlined"> remove </span>
+                    </a>
+                    <p class="fs-5 fw-bold text-neutral-100 mx-5 px-5 py-2">
+                      2
+                    </p>
+                    <a href="#" class="p-5 rounded-circle border"
+                      ><span class="material-icons-outlined"> add </span></a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="d-flex flex-nowrap py-7 px-5 justify-content-between align-items-center"
+                >
+                  <div class="text-neutral-80">
+                    <a href="#" class="me-7"><u>編輯</u></a>
+                    <a href="#"><u>刪除</u></a>
+                  </div>
+
+                  <p class="fs-5 fw-bold text-neutral-100">NT$ 830</p>
+                </div>
+              </div>
+              <div class="card bg-white rounded-4 border-0 mb-5 mb-lg-7">
+                <div
+                  class="d-flex flex-column flex-lg-row align-items-lg-center px-5 pt-7 pb-5 ps-lg-7 pe-lg-9 py-lg-9 border-bottom"
+                >
+                  <div class="form-check pe-lg-7 align-self-lg-start">
+                    <input
+                      class="form-check-input check-item mb-7"
+                      type="checkbox"
+                      value=""
+                    />
+                  </div>
+
+                  <div class="cart-img-size mb-6 me-lg-4">
+                    <img
+                      src="/assets/images/cart/cart-2.png"
+                      class="object-fit-cover rounded-4 d-block"
+                      alt="cart-2"
+                    />
+                  </div>
+                  <div class="me-lg-7">
+                    <h3 class="fs-4 fw-bold text-neutral-100 mb-2">
+                      泰式按摩過猛求生體驗
+                    </h3>
+                    <p class="fs-5 text-neutral-80 mb-2">
+                      限量脫骨套餐｜師傅強度隨緣，靈魂有機會先離開
+                    </p>
+                    <p class="fs-5 text-neutral-80 mb-7">兌換期內皆適用</p>
+                  </div>
+
+                  <div class="d-flex flex-nowrap align-items-center">
+                    <a href="#" class="p-5 rounded-circle border">
+                      <span class="material-icons-outlined"> remove </span>
+                    </a>
+                    <p class="fs-5 fw-bold text-neutral-100 mx-5 px-5 py-2">
+                      2
+                    </p>
+                    <a href="#" class="p-5 rounded-circle border"
+                      ><span class="material-icons-outlined"> add </span></a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="d-flex flex-nowrap py-7 px-5 justify-content-between align-items-center"
+                >
+                  <div class="text-neutral-80">
+                    <a href="#" class="me-7"><u>編輯</u></a>
+                    <a href="#"><u>刪除</u></a>
+                  </div>
+
+                  <p class="fs-5 fw-bold text-neutral-100">NT$ 1,230</p>
+                </div>
+              </div>
+              <div class="card bg-white rounded-4 border-0">
+                <div
+                  class="d-flex flex-column flex-lg-row align-items-lg-center px-5 pt-7 pb-5 ps-lg-7 pe-lg-9 py-lg-9 border-bottom"
+                >
+                  <div class="form-check pe-lg-7 align-self-lg-start">
+                    <input
+                      class="form-check-input check-item mb-7"
+                      type="checkbox"
+                      value=""
+                    />
+                  </div>
+
+                  <div class="cart-img-size mb-6 me-lg-4">
+                    <img
+                      src="/assets/images/cart/cart-3.png"
+                      class="object-fit-cover rounded-4 d-block"
+                      alt="cart-3"
+                    />
+                  </div>
+                  <div class="me-lg-7">
+                    <h3 class="fs-4 fw-bold text-neutral-100 mb-2">
+                      海闊天空展望台門票 HARUKAS 300
+                    </h3>
+                    <p class="fs-5 text-neutral-80 mb-2">阿倍野展望台門票</p>
+                    <p class="fs-5 text-neutral-80 mb-7">兌換期內皆適用</p>
+                  </div>
+
+                  <div class="d-flex flex-nowrap align-items-center">
+                    <a href="#" class="p-5 rounded-circle border">
+                      <span class="material-icons-outlined"> remove </span>
+                    </a>
+                    <p class="fs-5 fw-bold text-neutral-100 mx-5 px-5 py-2">
+                      1
+                    </p>
+                    <a href="#" class="p-5 rounded-circle border"
+                      ><span class="material-icons-outlined"> add </span></a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="d-flex flex-nowrap py-7 px-5 justify-content-between align-items-center"
+                >
+                  <div class="text-neutral-80">
+                    <a href="#" class="me-7"><u>編輯</u></a>
+                    <a href="#"><u>刪除</u></a>
+                  </div>
+
+                  <p class="fs-5 fw-bold text-neutral-100">NT$ 410</p>
+                </div>
+              </div>
+            </div>
+            <div class="col col-lg-4 d-none d-lg-block">
+              <div class="card bg-white rounded-4 p-7 border-0">
+                <h3 class="fs-4 fw-bold text-neutral-100">費用明細</h3>
+                <div class="border-bottom py-9 mb-9">
+                  <div
+                    class="d-flex flex-nowrap justify-content-between z text-neutral-80 mb-4"
+                  >
+                    <p class="fs-5">商品小計</p>
+                    <p class="fs-5 fw-bold">NT$ 3600</p>
+                  </div>
+
+                  <div
+                    class="d-flex flex-nowrap justify-content-between text-neutral-80"
+                  >
+                    <p class="fs-5">優惠折抵</p>
+                    <p class="fs-5 fw-bold text-primary-60">- 100</p>
+                  </div>
+                </div>
+
+                <div
+                  class="d-flex flex-nowrap justify-content-between align-items-center text-neutral-80 mb-9"
+                >
+                  <p class="fs-5">總計</p>
+                  <p class="fs-3 fw-bold">NT$ 3,500</p>
+                </div>
+
+                <button
+                  class="btn btn-primary rounded-3 py-5 px-9 border-0"
+                  type="button"
+                >
+                  前往結賬
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cart-empty">
+        <div class="container py-11">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center"
+          >
+            <img
+              src="/assets/images/empty.svg"
+              class="cart-empty-img-size mb-7"
+              alt="empty"
+            />
+            <div>
+              <p class="text-neutral-80">購物車還沒有商品，立即逛逛！</p>
+
+              <button
+                class="btn btn-primary rounded-3 py-5 px-9 border-0 w-100"
+                type="button"
+              >
+                前往結賬
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cart-recommend">
+        <div class="container py-10 border position-relative">
+          <button
+            type="button"
+            class="btn bg-white border-0 rounded-3 text-primary p-5 position-absolute top-50 start-0 translate-middle z-1 d-none d-xl-block"
+          >
+            <span class="material-icons-outlined align-bottom">
+              arrow_back
+            </span>
+          </button>
+
+          <button
+            type="button"
+            class="btn bg-white border-0 rounded-3 text-primary p-5 position-absolute top-50 start-100 translate-middle z-1 d-none d-xl-block"
+          >
+            <span class="material-icons-outlined align-bottom">
+              arrow_forward
+            </span>
+          </button>
+          <h2 class="text-primary mb-10 mb-lg-7"># 其他旅人也買了</h2>
+          <div
+            class="d-flex flex-nowrap gap-5 justify-content-between overflow-x-auto border"
+          >
+            <div class="">
+              <div class="card">
+                <div class="mb-5">
+                  <img
+                    src="/assets/images/index/recommend-1.png"
+                    alt="recommend-1"
+                    class="object-fit-cover rounded-4 d-block"
+                  />
+                </div>
+                <div class="pb-5 border-bottom mb-5">
+                  <h4 class="mb-2">
+                    【獨家優惠】布萊頓彩色小屋＋森林蒸汽火車一日遊
+                  </h4>
+
+                  <div class="d-lg-flex flex-lg-wrap text-primary mb-2">
+                    <div class="">
+                      <button
+                        type="button"
+                        class="btn btn-primary-10 rounded rounded-3 py-2 px-5 flex-shrink-0"
+                      >
+                        即買即用
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-primary-10 rounded rounded-3 py-2 px-5 flex-shrink-0 ms-2"
+                      >
+                        5 天前可免費取消
+                      </button>
+                    </div>
+                  </div>
+
+                  <p class="">
+                    <span
+                      class="material-icons-outlined align-bottom"
+                      style="color: #f6bd2b"
+                    >
+                      star
+                    </span>
+                    <span>4.2</span>
+                    <span>(333)</span>
+                    <span>|</span>
+                    <span>500+ 個已訂購</span>
+                  </p>
+                </div>
+                <h4>NT$ 4,220</h4>
+                <h5>NT$ 5,220</h5>
+              </div>
+            </div>
+            <div class="">
+              <div class="card">
+                <div class="mb-5">
+                  <img
+                    src="/assets/images/index/recommend-1.png"
+                    alt="recommend-1"
+                    class="object-fit-cover rounded-4 d-block"
+                  />
+                </div>
+                <div class="pb-5 border-bottom mb-5">
+                  <h4 class="mb-2">無尾熊動物園＋企鵝歸巢雙享之旅</h4>
+
+                  <div class="d-lg-flex flex-lg-wrap text-primary mb-2">
+                    <div class="">
+                      <button
+                        type="button"
+                        class="btn btn-primary-10 rounded rounded-3 py-2 px-5 flex-shrink-0"
+                      >
+                        即買即用
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-primary-10 rounded rounded-3 py-2 px-5 flex-shrink-0 ms-2"
+                      >
+                        5 天前可免費取消
+                      </button>
+                    </div>
+                  </div>
+
+                  <p class="">
+                    <span
+                      class="material-icons-outlined align-bottom"
+                      style="color: #f6bd2b"
+                    >
+                      star
+                    </span>
+                    <span>4.2</span>
+                    <span>(333)</span>
+                    <span>|</span>
+                    <span>500+ 個已訂購</span>
+                  </p>
+                </div>
+                <h4>NT$ 4,220</h4>
+                <h5>NT$ 5,220</h5>
+              </div>
+            </div>
+            <div class="">
+              <div class="card">
+                <div class="mb-5">
+                  <img
+                    src="/assets/images/index/recommend-1.png"
+                    alt="recommend-1"
+                    class="object-fit-cover rounded-4 d-block"
+                  />
+                </div>
+                <div class="pb-5 border-bottom mb-5">
+                  <h4 class="mb-2">
+                    【獨家優惠】布萊頓彩色小屋＋森林蒸汽火車一日遊
+                  </h4>
+
+                  <div class="d-lg-flex flex-lg-wrap text-primary mb-2">
+                    <div class="">
+                      <button
+                        type="button"
+                        class="btn btn-primary-10 rounded rounded-3 py-2 px-5 flex-shrink-0"
+                      >
+                        即買即用
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-primary-10 rounded rounded-3 py-2 px-5 flex-shrink-0 ms-2"
+                      >
+                        5 天前可免費取消
+                      </button>
+                    </div>
+                  </div>
+
+                  <p class="">
+                    <span
+                      class="material-icons-outlined align-bottom"
+                      style="color: #f6bd2b"
+                    >
+                      star
+                    </span>
+                    <span>4.2</span>
+                    <span>(333)</span>
+                    <span>|</span>
+                    <span>500+ 個已訂購</span>
+                  </p>
+                </div>
+                <h4>NT$ 4,220</h4>
+                <h5>NT$ 5,220</h5>
+              </div>
+            </div>
+            <div class="">
+              <div class="card">
+                <div class="mb-5">
+                  <img
+                    src="/assets/images/index/recommend-1.png"
+                    alt="recommend-1"
+                    class="object-fit-cover rounded-4 d-block"
+                  />
+                </div>
+                <div class="pb-5 border-bottom mb-5">
+                  <h4 class="mb-2">無尾熊動物園＋企鵝歸巢雙享之旅</h4>
+
+                  <div class="d-lg-flex flex-lg-wrap text-primary mb-2">
+                    <div class="">
+                      <button
+                        type="button"
+                        class="btn btn-primary-10 rounded rounded-3 py-2 px-5 flex-shrink-0"
+                      >
+                        即買即用
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-primary-10 rounded rounded-3 py-2 px-5 flex-shrink-0 ms-2"
+                      >
+                        5 天前可免費取消
+                      </button>
+                    </div>
+                  </div>
+
+                  <p class="">
+                    <span
+                      class="material-icons-outlined align-bottom"
+                      style="color: #f6bd2b"
+                    >
+                      star
+                    </span>
+                    <span>4.2</span>
+                    <span>(333)</span>
+                    <span>|</span>
+                    <span>500+ 個已訂購</span>
+                  </p>
+                </div>
+                <h4>NT$ 4,220</h4>
+                <h5>NT$ 5,220</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="d-lg-none bg-white">
+        <div class="col-12">
+          <div class="container">
+            <div
+              class="d-flex flex-nowrap justify-content-between align-items-center py-2"
+            >
+              <div
+                class="accordion accordion-flush border-0"
+                id="accordionExample"
+              >
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button
+                      class="accordion-button text-neutral-80 fs-6"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseOne"
+                    >
+                      展開明細
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseOne"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body py-0">
+                      <h3 class="text-neutral-100 fs-4">NT$ 3,600</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <button
+                  class="btn btn-primary rounded-3 py-5 px-9 border-0"
+                  type="button"
+                >
+                  前往結賬
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+    <script>
+      const cartList = document.querySelector(".cart-list");
+      const cartEmpty = document.querySelector(".cart-empty");
+      cartList.style = "display:block";
+      cartEmpty.style = "display:none";
+      const deleteBtn = document.querySelector(".delete-btn");
+      deleteBtn.addEventListener("click", (e) => {
+        cartList.style = "display:none";
+        cartEmpty.style = "display:block";
+      });
+      const checkAll = document.querySelector(".check-all");
+      const checkAllBtn = document.querySelector(".check-all-btn");
+      const checkAllLable = document.querySelector(".check-all-label");
+      const checkItems = document.querySelectorAll(".check-item");
+      let initalStatus = true;
+      checkAll.addEventListener("click", (e) => {
+        checkAllBtn.checked = initalStatus;
+        checkItems.forEach((item) => {
+          item.checked = initalStatus;
+        });
+        initalStatus = !initalStatus;
+      });
+
+      checkAllLable.addEventListener("click", (e) => {
+        checkAllBtn.checked = initalStatus;
+        checkItems.forEach((item) => {
+          item.checked = initalStatus;
+        });
+        initalStatus = !initalStatus;
+      });
+
+      checkItems.forEach((items) => {
+        items.addEventListener("click", (item) => {
+          checkAllBtn.checked = false;
+          initalStatus = true;
+        });
+      });
+    </script>
+  </body>
+</html>
