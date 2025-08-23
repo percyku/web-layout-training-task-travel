@@ -1,4 +1,8 @@
 /* 標籤的基本樣式 */
+html {
+  scroll-timeline-name: --page-scroll;
+  scroll-timeline-axis: block;
+}
 body {
   letter-spacing: 0.02em;
   // outline: solid 1px;
