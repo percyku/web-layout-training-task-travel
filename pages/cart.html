@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>購物車</title>
+
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet"
     />
+    <title>購物車</title>
   </head>
   <body>
     <%- include('./layout/header'); -%>
@@ -264,7 +265,7 @@
         </div>
       </section>
       <section class="cart-recommend">
-        <div class="container py-10 border position-relative">
+        <div class="container py-10 position-relative">
           <button
             type="button"
             class="btn bg-white border-0 rounded-3 text-primary p-5 position-absolute top-50 start-0 translate-middle z-1 d-none d-xl-block"
@@ -284,21 +285,33 @@
           </button>
           <h2 class="text-primary mb-10 mb-lg-7"># 其他旅人也買了</h2>
           <div
-            class="d-flex flex-nowrap gap-5 justify-content-between overflow-x-auto border"
+            class="d-flex flex-nowrap gap-5 justify-content-between overflow-x-auto"
           >
-            <div class="">
-              <div class="card">
+            <div class="h-100">
+              <div
+                class="card-1 border border-0 position-relative overflow-hidden h-100"
+              >
+                <a
+                  href="#"
+                  class="position-absolute p-5 deco-img-heart border-0 top-0 start-90 translate-middle-x z-1 overflow-hidden"
+                >
+                  <span
+                    class="material-icons-outlined align-bottom text-white z-2 overflow-hidden"
+                  >
+                    favorite_border
+                  </span>
+                </a>
                 <div class="mb-5">
                   <img
-                    src="/assets/images/index/recommend-1.png"
-                    alt="recommend-1"
+                    src="/assets/images/location/top-1.png"
+                    alt="top-1"
                     class="object-fit-cover rounded-4 d-block"
                   />
                 </div>
                 <div class="pb-5 border-bottom mb-5">
-                  <h4 class="mb-2">
-                    【獨家優惠】布萊頓彩色小屋＋森林蒸汽火車一日遊
-                  </h4>
+                  <p class="mb-2 fw-bold">
+                    環球影城超值一日遊｜哈利波特園區＋快速通關體驗
+                  </p>
 
                   <div class="d-lg-flex flex-lg-wrap text-primary mb-2">
                     <div class="">
@@ -324,27 +337,42 @@
                     >
                       star
                     </span>
-                    <span>4.2</span>
-                    <span>(333)</span>
-                    <span>|</span>
-                    <span>500+ 個已訂購</span>
+                    <span class="text-neutral-80">4.2</span>
+                    <span class="text-neutral-60 pe-4 border-end">(333)</span>
+
+                    <span class="text-neutral-80 ps-4">500+ 個已訂購</span>
                   </p>
                 </div>
-                <h4>NT$ 4,220</h4>
-                <h5>NT$ 5,220</h5>
+                <h4 class="fs-4 text-primary">NT$ 4,220</h4>
+                <h5 class="fs-6"><del>NT$ 5,220</del></h5>
               </div>
             </div>
-            <div class="">
-              <div class="card">
+
+            <div class="h-100">
+              <div
+                class="card-1 border border-0 position-relative overflow-hidden h-100"
+              >
+                <a
+                  href="#"
+                  class="position-absolute p-5 deco-img-heart border-0 top-0 start-90 translate-middle-x z-1 overflow-hidden"
+                >
+                  <span
+                    class="material-icons-outlined align-bottom text-white z-2 overflow-hidden"
+                  >
+                    favorite_border
+                  </span>
+                </a>
                 <div class="mb-5">
                   <img
-                    src="/assets/images/index/recommend-1.png"
-                    alt="recommend-1"
+                    src="/assets/images/location/top-2.png"
+                    alt="top-2"
                     class="object-fit-cover rounded-4 d-block"
                   />
                 </div>
                 <div class="pb-5 border-bottom mb-5">
-                  <h4 class="mb-2">無尾熊動物園＋企鵝歸巢雙享之旅</h4>
+                  <p class="mb-2 fw-bold">
+                    奈良梅花鹿餵食體驗＋和服散策｜日式風情輕旅行
+                  </p>
 
                   <div class="d-lg-flex flex-lg-wrap text-primary mb-2">
                     <div class="">
@@ -358,7 +386,7 @@
                         type="button"
                         class="btn btn-primary-10 rounded rounded-3 py-2 px-5 flex-shrink-0 ms-2"
                       >
-                        5 天前可免費取消
+                        7 天前可免費取消
                       </button>
                     </div>
                   </div>
@@ -370,29 +398,42 @@
                     >
                       star
                     </span>
-                    <span>4.2</span>
-                    <span>(333)</span>
-                    <span>|</span>
-                    <span>500+ 個已訂購</span>
+                    <span class="text-neutral-80">4.2</span>
+                    <span class="text-neutral-60 pe-4 border-end">(333)</span>
+
+                    <span class="text-neutral-80 ps-4">500+ 個已訂購</span>
                   </p>
                 </div>
-                <h4>NT$ 4,220</h4>
-                <h5>NT$ 5,220</h5>
+                <h4 class="fs-4 text-primary">NT$ 3,890</h4>
+                <h5 class="fs-6"><del>NT$ 4,920</del></h5>
               </div>
             </div>
-            <div class="">
-              <div class="card">
+
+            <div class="h-100">
+              <div
+                class="card-1 border border-0 position-relative overflow-hidden h-100"
+              >
+                <a
+                  href="#"
+                  class="position-absolute p-5 deco-img-heart border-0 top-0 start-90 translate-middle-x z-1 overflow-hidden"
+                >
+                  <span
+                    class="material-icons-outlined align-bottom text-white z-2 overflow-hidden"
+                  >
+                    favorite_border
+                  </span>
+                </a>
                 <div class="mb-5">
                   <img
-                    src="/assets/images/index/recommend-1.png"
-                    alt="recommend-1"
+                    src="/assets/images/location/top-3.png"
+                    alt="top-3"
                     class="object-fit-cover rounded-4 d-block"
                   />
                 </div>
                 <div class="pb-5 border-bottom mb-5">
-                  <h4 class="mb-2">
-                    【獨家優惠】布萊頓彩色小屋＋森林蒸汽火車一日遊
-                  </h4>
+                  <p class="mb-2 fw-bold">
+                    黑門市場美食巡禮｜在地職人帶路吃遍大阪經典小吃
+                  </p>
 
                   <div class="d-lg-flex flex-lg-wrap text-primary mb-2">
                     <div class="">
@@ -400,7 +441,7 @@
                         type="button"
                         class="btn btn-primary-10 rounded rounded-3 py-2 px-5 flex-shrink-0"
                       >
-                        即買即用
+                        中文導覽
                       </button>
                       <button
                         type="button"
@@ -418,27 +459,41 @@
                     >
                       star
                     </span>
-                    <span>4.2</span>
-                    <span>(333)</span>
-                    <span>|</span>
-                    <span>500+ 個已訂購</span>
+                    <span class="text-neutral-80">4.2</span>
+                    <span class="text-neutral-60 pe-4 border-end">(333)</span>
+
+                    <span class="text-neutral-80 ps-4">500+ 個已訂購</span>
                   </p>
                 </div>
-                <h4>NT$ 4,220</h4>
-                <h5>NT$ 5,220</h5>
+                <h4 class="fs-4 text-primary">NT$ 3,690</h4>
               </div>
             </div>
-            <div class="">
-              <div class="card">
+
+            <div class="h-100">
+              <div
+                class="card-1 border border-0 position-relative overflow-hidden h-100"
+              >
+                <a
+                  href="#"
+                  class="position-absolute p-5 deco-img-heart border-0 top-0 start-90 translate-middle-x z-1 overflow-hidden"
+                >
+                  <span
+                    class="material-icons-outlined align-bottom text-white z-2 overflow-hidden"
+                  >
+                    favorite_border
+                  </span>
+                </a>
                 <div class="mb-5">
                   <img
-                    src="/assets/images/index/recommend-1.png"
-                    alt="recommend-1"
+                    src="/assets/images/location/top-4.png"
+                    alt="top-4"
                     class="object-fit-cover rounded-4 d-block"
                   />
                 </div>
                 <div class="pb-5 border-bottom mb-5">
-                  <h4 class="mb-2">無尾熊動物園＋企鵝歸巢雙享之旅</h4>
+                  <p class="mb-2 fw-bold">
+                    大阪夜景直升機體驗｜空中俯瞰梅田摩天輪＋海遊館
+                  </p>
 
                   <div class="d-lg-flex flex-lg-wrap text-primary mb-2">
                     <div class="">
@@ -446,13 +501,13 @@
                         type="button"
                         class="btn btn-primary-10 rounded rounded-3 py-2 px-5 flex-shrink-0"
                       >
-                        即買即用
+                        專業導覽
                       </button>
                       <button
                         type="button"
                         class="btn btn-primary-10 rounded rounded-3 py-2 px-5 flex-shrink-0 ms-2"
                       >
-                        5 天前可免費取消
+                        3 天前可免費取消
                       </button>
                     </div>
                   </div>
@@ -464,14 +519,13 @@
                     >
                       star
                     </span>
-                    <span>4.2</span>
-                    <span>(333)</span>
-                    <span>|</span>
-                    <span>500+ 個已訂購</span>
+                    <span class="text-neutral-80">4.2</span>
+                    <span class="text-neutral-60 pe-4 border-end">(333)</span>
+
+                    <span class="text-neutral-80 ps-4">500+ 個已訂購</span>
                   </p>
                 </div>
-                <h4>NT$ 4,220</h4>
-                <h5>NT$ 5,220</h5>
+                <h4 class="fs-4 text-primary">NT$1,280</h4>
               </div>
             </div>
           </div>

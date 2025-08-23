@@ -23,7 +23,13 @@
 }
 
 .cart-recommend {
-  .card {
+  background-color: $neutral-46;
+  .deco-img-heart {
+    opacity: 0.4;
+    border-radius: 12px;
+    background-color: $neutral-80;
+  }
+  .card-1 {
     width: 306px;
   }
   img {
