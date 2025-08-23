@@ -69,16 +69,19 @@
 }
 
 .index-inspire {
-  .btn {
-    &:hover {
-      background-color: #4a3830;
-    }
+  .deco-img {
+    width: 162px;
+    height: 80px;
   }
-}
-
-.index-inspire {
+  .deco-text {
+    font-size: 100px;
+    color: #dfd2cd;
+    z-index: 1000;
+    font-style: italic;
+  }
   .card {
     width: 312px;
+    // height: 610px;
     img {
       width: 280px;
       height: 200px;
@@ -88,8 +91,12 @@
 
 @media (min-width: 992px) {
   .index-inspire {
+    .deco-text {
+      font-size: 200px;
+    }
     .card {
       width: 746px;
+      height: 444px;
       img {
         width: 300px;
         height: auto;
@@ -103,12 +110,92 @@
 }
 
 .index-search {
+  .deco-img-heart {
+    opacity: 0.4;
+    border-radius: 12px;
+    background-color: $neutral-80;
+  }
+  .deco-img {
+    width: 52px;
+    height: 52px;
+  }
   .card {
     width: 306px;
   }
   img {
     width: 100%;
     height: 212px;
+  }
+  del {
+    color: #808080;
+  }
+
+  .offset-row-left {
+    transform: translateX(-64px);
+  }
+
+  .offset-row-right {
+    transform: translateX(64px);
+  }
+
+  .marquee {
+    overflow: hidden;
+    p {
+      color: #f3eeec;
+      font-size: 32px;
+      font-weight: bold;
+      // line-height: 32px;
+      align-items: center;
+      white-space: nowrap;
+
+      animation-name: marquee;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: linear;
+      @keyframes marquee {
+        from {
+          transform: translateX(-25%);
+        }
+        to {
+          transform: translateX(0%);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .index-search {
+    .marquee {
+      p {
+        font-size: 64px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .index-search {
+    .marquee {
+      p {
+        font-size: 96px;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .index-search {
+    .deco-img {
+      width: 120px;
+      height: 120px;
+    }
+    .marquee {
+      p {
+        font-size: 130px;
+      }
+    }
   }
 }
 
